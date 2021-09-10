@@ -1,6 +1,6 @@
 {
-  "name": "parme",
-  "private": true,
+  "name": "parmegianologo",
+  "private": false,
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
