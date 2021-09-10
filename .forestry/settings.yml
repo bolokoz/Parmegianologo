@@ -6,13 +6,8 @@ webhook_url:
 sections:
 - type: directory
   path: articles
-<<<<<<< HEAD
   label: Articles
   create: documents
-=======
-  label: parmegianas
-  create: all
->>>>>>> 8936271637168ec4265ad9e535ba1c5863c24f52
   match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
@@ -20,17 +15,9 @@ front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
 build:
-<<<<<<< HEAD
   preview_output_directory: dist
   install_dependencies_command: npm install
   preview_docker_image: node:10
   mount_path: "/srv"
   working_dir: "/srv"
   instant_preview_command: gridsome develop
-=======
-  install_dependencies_command: npm install
-  preview_docker_image: forestryio/node:12
-  mount_path: "/srv"
-  working_dir: "/srv"
-  instant_preview_command: npm run develop
->>>>>>> 8936271637168ec4265ad9e535ba1c5863c24f52
