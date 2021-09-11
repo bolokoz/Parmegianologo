@@ -23,7 +23,7 @@ query Parmegianas{
         preview_image
         title
         nota
-        date
+        date (format: "DD/MM/YY")
         justificativa
         preco
         cidade
