@@ -3,12 +3,15 @@
 # Site para avaliação de parmegianas
 
 
-[parmegianologo.netlify.app](parmegianologo.netlify.app)
+[parmegianologo.netlify.app](https://parmegianologo.netlify.app)
 
 ## Usa Forestry.io + Gridsome + Tailwind + FontAwesome + Netlify
 
 - Totalmente gratuito
 - Sem servidor (netlify)
+  - ao dar push no repositório, netlify faz o build do site estático e atualiza as páginas dinâmicas
 - CMS remoto fácil com template markdown (forestry)
+  - qualquer tonto consegue adicionar conteudo sem abrir nenhuma IDE
+  - basta acessar o endereço meusite.com/admin
 - Site estático com páginas dinâmicas baseadas no api buscado com graphql (gridsome)
 - Design Tailwind + FontAwesome
