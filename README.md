@@ -8,6 +8,8 @@
 ## Usa Forestry.io + Gridsome + Tailwind + FontAwesome + Netlify
 
 - Totalmente gratuito
+- Site super leve e rápido para carregar
+- O design é feio, um dia vai melhorar
 - Sem servidor (netlify)
   - ao dar push no repositório, netlify faz o build do site estático e atualiza as páginas dinâmicas
 - CMS remoto fácil com template markdown (forestry)
