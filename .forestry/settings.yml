@@ -5,10 +5,12 @@ admin_path: "/admin"
 webhook_url: 
 sections:
 - type: directory
-  path: articles
-  label: Articles
+  path: parmegianas
+  label: Parmegianas
   create: documents
   match: "**/*"
+  templates:
+  - article
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
