@@ -1,22 +1,23 @@
 <template>
   <Layout>
-    <LatestArticles :articles="$page.articles.edges"/>
+    <LatestArticles :articles="$page.articles.edges" />
   </Layout>
 </template>
 
 <page-query>
-query Posts {
-  articles: allArticlePost (perPage: 1, filter: { published: { eq: true }}) {
+
+
+query Parmegianas{
+  articles: allArticlePost {
     edges {
       node {
         id
         path
-        date (format: "MMMM D, YYYY")
+        preview_image
         title
-        published
-        categories
-        preview_image (quality: 90)
-        excerpt
+        nota
+        justificativa
+        preco
       }
     }
   }
@@ -24,13 +25,13 @@ query Posts {
 </page-query>
 
 <script>
-import LatestArticles from '../components/LatestArticles'
+import LatestArticles from "../components/LatestArticles";
 
 export default {
   components: {
-    LatestArticles
-  }
-}
+    LatestArticles,
+  },
+};
 </script>
 
 <style>

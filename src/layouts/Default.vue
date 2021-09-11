@@ -1,13 +1,13 @@
 <template>
-<div class="block">
+  <div class="block">
     <div class="container block mx-auto pt-2">
-      <Header/>
+      <Header />
       <div class="p-5">
-        <slot/>
+        <slot />
       </div>
     </div>
-    <Footer/>
-</div>
+    <Footer />
+  </div>
 </template>
 
 <<script>

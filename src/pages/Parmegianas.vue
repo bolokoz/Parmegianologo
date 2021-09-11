@@ -90,7 +90,6 @@ query Article ($page: Int) {
         title
         date (format: "MMMM D, YYYY")
         cidade
-        imagens
         nota
         preco
         justificativa
