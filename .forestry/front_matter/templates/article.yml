@@ -5,23 +5,22 @@ fields:
 - name: preview_image
   type: file
   config:
-    maxSize: 250
+    maxSize: 6
   label: Preview Image
-- name: author
-  type: text
-  config:
-    required: false
-  label: Author
+- name: imagens
+  type: image_gallery
+  config: {}
+  label: Imagens
 - name: title
   type: text
   config:
     required: false
   label: Title
-- name: published
-  type: boolean
-  label: Publish?
-  description: Is this ready to be published? Toggling on will display this on the
-    home page.
+- name: cidade
+  type: text
+  config:
+    required: false
+  label: Cidade
 - name: date
   type: datetime
   label: Date
@@ -30,14 +29,33 @@ fields:
     date_format: 
     time_format: 
     display_utc: false
-- name: excerpt
-  type: textarea
-  default: ''
-  description: Short snippet that will show outside of the actual post
+- name: nota
+  type: select
+  default: []
   config:
-    required: true
-    wysiwyg: false
-- name: content
+    required: false
+    options:
+    - 1/4
+    - 2/4
+    - 3/4
+    - 4/4
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Nota
+- name: preco
+  type: number
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 0
+    max: 
+    step: 
+  label: Preço
+- name: justificativa
   type: textarea
   default: ''
   config:
@@ -45,22 +63,15 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
-  label: Content
-- type: tag_list
-  name: categories
-  label: Categories
-- name: source
-  type: field_group_list
-  fields:
-  - name: source
-    type: include
-    config: {}
-    template: source
-    label: Source
+  label: Justificativa
+- name: recomendacao
+  type: textarea
+  default: ''
   config:
-    min: 
-    max: 
-    labelField: 
-  label: Sources
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Recomendacao
 pages:
 - articles/sample-blog-post-1.md
