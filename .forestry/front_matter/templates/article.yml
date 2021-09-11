@@ -1,6 +1,7 @@
 ---
 label: Parmegiana
 hide_body: true
+display_field: title
 fields:
 - name: preview_image
   type: file
@@ -73,7 +74,3 @@ fields:
     schema:
       format: markdown
   label: Recomendacao
-pages:
-- articles/bella-parmegiana.md
-- articles/sample-blog-post-1.md
-- articles/vesuvio.md
