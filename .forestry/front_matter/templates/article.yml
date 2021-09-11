@@ -1,6 +1,6 @@
 ---
-label: Article
-hide_body: false
+label: Parmegiana
+hide_body: true
 fields:
 - name: preview_image
   type: file
