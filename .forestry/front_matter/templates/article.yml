@@ -74,5 +74,6 @@ fields:
       format: markdown
   label: Recomendacao
 pages:
+- articles/bella-parmegiana.md
 - articles/sample-blog-post-1.md
 - articles/vesuvio.md
