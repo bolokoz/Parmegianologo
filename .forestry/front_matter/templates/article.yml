@@ -75,3 +75,4 @@ fields:
   label: Recomendacao
 pages:
 - articles/sample-blog-post-1.md
+- articles/vesuvio.md
