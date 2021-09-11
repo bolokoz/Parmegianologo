@@ -5,10 +5,10 @@
     <div class="footer-section md:self-start">&copy; Parmegianólogo</div>
     <div class="footer-section">parmegianologo.netlify.app</div>
     <div class="footer-section social">
-      <g-link href="#">
+      <g-link href="https://instagram.com/parmegianologo">
         <font-awesome :icon="['fab', 'instagram']" size="2x" />
       </g-link>
-      <g-link href="#">
+      <g-link href="https://github.com/bolokoz/parmegianologo">
         <font-awesome :icon="['fab', 'github']" size="2x" />
       </g-link>
     </div>

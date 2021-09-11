@@ -1,6 +1,13 @@
 <template>
   <Layout>
-    <LatestArticles :articles="$page.articles.edges" />
+    <!-- <ListaParmegianas :articles="$page.articles.edges" /> -->
+    <List>
+      <ListItem
+        v-for="article in $page.articles.edges"
+        :key="article.id"
+        :item="article.node"
+      />
+    </List>
   </Layout>
 </template>
 
@@ -16,8 +23,10 @@ query Parmegianas{
         preview_image
         title
         nota
+        date
         justificativa
         preco
+        cidade
       }
     }
   }
@@ -25,11 +34,14 @@ query Parmegianas{
 </page-query>
 
 <script>
-import LatestArticles from "../components/LatestArticles";
+// import ListaParmegianas from "../components/ListaParmegianas";
+import List from "../components/List";
+import ListItem from "../components/ListItem";
 
 export default {
   components: {
-    LatestArticles,
+    List,
+    ListItem,
   },
 };
 </script>
