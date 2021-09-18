@@ -3,11 +3,6 @@ label: Parmegiana
 hide_body: true
 display_field: title
 fields:
-- name: preview_image
-  type: file
-  config:
-    maxSize: 6
-  label: Preview Image
 - name: imagens
   type: image_gallery
   config: {}
