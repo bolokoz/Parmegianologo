@@ -7,6 +7,7 @@
     <div
       class="
         xl:max-w-3xl
+        xl:content-center
         bg-white
         p-3
         pb-1

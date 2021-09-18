@@ -37,8 +37,28 @@
           </svg>
         </button>
       </div>
-      <div class="w-full block lg:flex lg:items-center lg:w-auto font-semibold">
+      <div class="w-full block md:flex md:items-center md:w-auto font-semibold">
         <div class="text-md lg:flex-grow mt-6" v-if="collapsed">
+          <g-link to="/" class="nav-link md:inline-flex md:text-left"
+            >Parmegianas</g-link
+          >
+          <g-link to="/tabela" class="nav-link md:inline-flex md:text-left"
+            >Tabela</g-link
+          >
+          <g-link to="/sobre" class="nav-link md:inline-flex md:text-left"
+            >Sobre</g-link
+          >
+          <a
+            href="https://parmegianologo.netlify.app/admin"
+            class="nav-link md:inline-flex md:text-left"
+            >Admin
+          </a>
+        </div>
+      </div>
+      <div
+        class="w-full hidden md:flex md:items-center md:w-auto font-semibold"
+      >
+        <div class="text-md lg:flex-grow mt-6">
           <g-link to="/" class="nav-link md:inline-flex md:text-left"
             >Parmegianas</g-link
           >
@@ -63,7 +83,7 @@
 export default {
   data() {
     return {
-      collapsed: true,
+      collapsed: false,
     };
   },
   methods: {
