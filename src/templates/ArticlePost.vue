@@ -2,6 +2,28 @@
   <Layout>
     <div class="sm:w-full md:w-3/4 m-auto">
       <div class="bg-white shadow-md p-10 rounded">
+        <div class="place-self-center">
+          <carousel :perPage="1">
+            <slide v-for="(imagem, i) in $page.post.imagens" :key="i">
+              <g-image
+                class="
+                  h-64
+                  w-full
+                  lg:w-full
+                  lg:h-auto
+                  flex-none
+                  object-cover object-center
+                  rounded-t
+                  lg:rounded-t-none lg:rounded-l
+                  text-center
+                  overflow-hidden
+                "
+                :src="imagem.src"
+                :alt="$page.post.title"
+              />
+            </slide>
+          </carousel>
+        </div>
         <div class="text-4xl font-bold">
           <spam v-text="$page.post.title" class="Article-title"></spam>
           <span> - </span>
@@ -36,64 +58,7 @@
             </ul>
           </div>
         </div>
-        <div>
-          <carousel perPage="1">
-            <slide>
-              <g-image
-                class="
-                  h-64
-                  w-full
-                  lg:h-56
-                  lg:w-64
-                  flex-none
-                  object-cover object-center
-                  rounded-t
-                  lg:rounded-t-none lg:rounded-l
-                  text-center
-                  overflow-hidden
-                "
-                :src="$page.post.preview_image"
-                :alt="$page.post.title"
-              />
-            </slide>
-            <slide>
-              <g-image
-                class="
-                  h-64
-                  w-full
-                  lg:h-56
-                  lg:w-64
-                  flex-none
-                  object-cover object-center
-                  rounded-t
-                  lg:rounded-t-none lg:rounded-l
-                  text-center
-                  overflow-hidden
-                "
-                :src="$page.post.preview_image"
-                :alt="$page.post.title"
-              />
-            </slide>
-          </carousel>
-        </div>
-        <div class="pt-5">
-          <g-image
-            class="
-              h-64
-              w-full
-              lg:h-56
-              lg:w-64
-              flex-none
-              object-cover object-center
-              rounded-t
-              lg:rounded-t-none lg:rounded-l
-              text-center
-              overflow-hidden
-            "
-            :src="$page.post.preview_image"
-            :alt="$page.post.title"
-          />
-        </div>
+
         <div class="pt-5">
           <strong>Justificativa da nota:</strong><br />
           <div>
@@ -123,6 +88,7 @@ query ArticlePost ($path: String!) {
     preview_image
     path
     title
+    imagens
     nota
     cidade
     date(format: "DD/MM/YY")
