@@ -23,7 +23,7 @@
       <div class="relative">
         <g-image
           class="w-full rounded-xl"
-          :src="item.preview_image"
+          :src="item.imagens[0].src"
           alt="Colors"
         />
         <p

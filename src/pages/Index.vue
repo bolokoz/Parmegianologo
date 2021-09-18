@@ -20,7 +20,7 @@ query Parmegianas{
       node {
         id
         path
-        preview_image
+        imagens
         title
         nota
         date (format: "DD/MM/YY")
