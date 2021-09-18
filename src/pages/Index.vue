@@ -33,6 +33,7 @@ query Parmegianas{
 }
 </page-query>
 
+
 <script>
 // import ListaParmegianas from "../components/ListaParmegianas";
 import List from "../components/List";
@@ -42,6 +43,9 @@ export default {
   components: {
     List,
     ListItem,
+  },
+  metaInfo: {
+    title: "Parmegianólogo",
   },
 };
 </script>

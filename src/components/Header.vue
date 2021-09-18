@@ -42,7 +42,10 @@
           <g-link to="/" class="nav-link md:inline-flex md:text-left"
             >Parmegianas</g-link
           >
-          <g-link to="/about" class="nav-link md:inline-flex md:text-left"
+          <g-link to="/tabela" class="nav-link md:inline-flex md:text-left"
+            >Tabela</g-link
+          >
+          <g-link to="/sobre" class="nav-link md:inline-flex md:text-left"
             >Sobre</g-link
           >
         </div>
