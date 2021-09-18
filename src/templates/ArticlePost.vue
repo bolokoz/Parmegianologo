@@ -2,10 +2,11 @@
   <Layout>
     <div class="sm:w-full md:w-3/4 m-auto">
       <div class="bg-white shadow-md p-10 rounded">
-        <div class="place-self-center">
-          <carousel :perPage="1">
-            <slide v-for="(imagem, i) in $page.post.imagens" :key="i">
+        <div class="my-6">
+          <VueSlickCarousel v-bind="settings">
+            <div v-for="(imagem, i) in $page.post.imagens" :key="i">
               <g-image
+                :key="i"
                 class="
                   h-64
                   w-full
@@ -19,10 +20,10 @@
                   overflow-hidden
                 "
                 :src="imagem.src"
-                :alt="$page.post.title"
+                :alt="imagem.src"
               />
-            </slide>
-          </carousel>
+            </div>
+          </VueSlickCarousel>
         </div>
         <div class="text-4xl font-bold">
           <spam v-text="$page.post.title" class="Article-title"></spam>
@@ -101,13 +102,27 @@ query ArticlePost ($path: String!) {
 
 <script>
 import ArticleContent from "@/components/ArticleContent";
-import { Carousel, Slide } from "vue-carousel";
-
+import VueSlickCarousel from "vue-slick-carousel";
+import "vue-slick-carousel/dist/vue-slick-carousel.css";
+// optional style for arrows & dots
+import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 export default {
   components: {
     ArticleContent,
-    Carousel,
-    Slide,
+    VueSlickCarousel,
+  },
+  data() {
+    return {
+      settings: {
+        dots: true,
+        dotsClass: "slick-dots custom-dot-class",
+        infinite: false,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+      },
+    };
   },
 };
 </script>
