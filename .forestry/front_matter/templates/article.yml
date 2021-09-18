@@ -70,5 +70,6 @@ fields:
       format: markdown
   label: Recomendacao
 pages:
+- parmegianas/bella-parmegiana.md
 - parmegianas/madero.md
 - parmegianas/vesuvio.md
