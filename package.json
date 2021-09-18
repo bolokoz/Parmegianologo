@@ -16,6 +16,7 @@
     "@gridsome/source-filesystem": "^0.6.0",
     "@gridsome/transformer-remark": "^0.3.3",
     "gridsome": "^0.7.17",
-    "tailwindcss": "^1.4.6"
+    "tailwindcss": "^1.4.6",
+    "vue-carousel": "^0.18.0"
   }
 }

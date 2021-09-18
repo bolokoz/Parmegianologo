@@ -36,6 +36,46 @@
             </ul>
           </div>
         </div>
+        <div>
+          <carousel perPage="1">
+            <slide>
+              <g-image
+                class="
+                  h-64
+                  w-full
+                  lg:h-56
+                  lg:w-64
+                  flex-none
+                  object-cover object-center
+                  rounded-t
+                  lg:rounded-t-none lg:rounded-l
+                  text-center
+                  overflow-hidden
+                "
+                :src="$page.post.preview_image"
+                :alt="$page.post.title"
+              />
+            </slide>
+            <slide>
+              <g-image
+                class="
+                  h-64
+                  w-full
+                  lg:h-56
+                  lg:w-64
+                  flex-none
+                  object-cover object-center
+                  rounded-t
+                  lg:rounded-t-none lg:rounded-l
+                  text-center
+                  overflow-hidden
+                "
+                :src="$page.post.preview_image"
+                :alt="$page.post.title"
+              />
+            </slide>
+          </carousel>
+        </div>
         <div class="pt-5">
           <g-image
             class="
@@ -95,10 +135,13 @@ query ArticlePost ($path: String!) {
 
 <script>
 import ArticleContent from "@/components/ArticleContent";
+import { Carousel, Slide } from "vue-carousel";
 
 export default {
   components: {
     ArticleContent,
+    Carousel,
+    Slide,
   },
 };
 </script>

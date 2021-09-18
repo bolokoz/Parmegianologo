@@ -48,6 +48,11 @@
           <g-link to="/sobre" class="nav-link md:inline-flex md:text-left"
             >Sobre</g-link
           >
+          <a
+            href="https://parmegianologo.netlify.app/admin"
+            class="nav-link md:inline-flex md:text-left"
+            >Admin
+          </a>
         </div>
       </div>
     </nav>
