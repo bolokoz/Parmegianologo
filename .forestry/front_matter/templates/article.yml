@@ -75,4 +75,5 @@ fields:
       format: markdown
   label: Recomendacao
 pages:
+- parmegianas/madero.md
 - parmegianas/vesuvio.md
