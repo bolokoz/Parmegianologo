@@ -3,8 +3,7 @@
     <div class="container mx-auto w-3/4 py-3">
       <h1 class="font-bold text-5xl">Sobre</h1>
       <p>
-        Faço avaliações de parmegianas. Meu prato preferido. Já
-        provei muitos parmegianas na vida e precisava catologá-los.
+        Faço avaliações pessoais de parmegianas. Meu prato preferido. Agora decidi catologá-los.
       </p>
     </div>
 
@@ -14,29 +13,29 @@
         Sempre quando chegava em um restaurante, novo ou não, eu pedia o
         parmegiana. Quando o prato chegava eu lembrava que já havia comido
         naquele local e o prato era ruim, inclusive havia dito que não pediria mais o
-        parmegiana daquele lugar... mas no fim acabava esquecendo. O besta não pode ver parmegiana que sempre pede. Então, para eu evitar de cometer o mesmo
+        parmegiana daquele lugar... mas no fim acabava esquecendo. Então, para evitar de cometer o mesmo
         erro, decidi começar a catalogar eles.
+      </p>
+    </div>
+    <div class="container mx-auto w-3/4 py-3">
+      <h1 class="font-bold text-5xl">Qual sua qualificação?</h1>
+      <p>
+        Nenhuma. 
       </p>
     </div>
 
     <div class="container mx-auto w-3/4 py-3">
-      <h1 class="font-bold text-3xl">A nota vai de um a quatro??</h1>
+      <h1 class="font-bold text-3xl">O que é o Parmegianólogo Score?</h1>
       <p>
-        Sim, a escala é 1 a 4. Normamente usa-se 1-5 ou 1-10, mas inspirado na
-        <a
-          href="https://en.wikipedia.org/wiki/Glasgow_Coma_Scale"
-          target="_blank"
-          >escala de Glasgow
-        </a>
-        decidi usar 1-4, sendo:
+        Parmegianólogo Score é uma nota subjetiva, sem critérios técnicos para avaliar o prato. Vai de 1 a 4.
       </p>
       <p>
         <ul>
-  <li>1/4 - ruim</li>
-  <li>2/4 - abaixo da média</li>
-  <li>3/4 - acima da média</li>
-  <li>4/4 - muito bom</li>
-</ul>
+          <li>1/4 - ruim</li>
+          <li>2/4 - abaixo da média (não voltaria para comer)</li>
+          <li>3/4 - acima da média (voltaria para comer)</li>
+          <li>4/4 - muito bom, recomendadíssimo</li>
+        </ul>
       </p>
     </div>
     <div class="container mx-auto w-3/4 py-3">
@@ -56,7 +55,7 @@
         Gostei do projeto. Quero fazer um também
       </h2>
       <p>
-        Se sua comida favorita é picanha na chapa ou você quer catalogar os melhores hamburgers vegetarianos. Fale comigo <a href="https://www.instagram.com/parmegianologo" target="_blank">no instagram</a> que eu te ensino a fazer algo idêntico. É tudo grátis. Não paga servidor e não precisa saber programação.
+        Se sua comida favorita é chipa de R$ 1 ou você quer catalogar os melhores hamburgers vegetarianos. Fale comigo <a href="https://www.instagram.com/parmegianologo" target="_blank">no instagram</a> que eu te ensino a fazer algo idêntico. É tudo grátis. Não paga servidor e não precisa saber programação.
       </p>
       <p>
         Caso entenda um pouco de programação web (HTML, Vue.js), garfeie o projeto <a href="https://www.github.com/bolokoz/parmegianologo" target="_blank"> neste link no GitHub </a>

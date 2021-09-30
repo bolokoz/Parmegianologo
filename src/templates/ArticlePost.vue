@@ -75,6 +75,22 @@
               </p>
             </div>
           </div>
+
+          <br />
+          <br />
+          <br />
+          <br />
+          ---
+
+          <div class="pt-5">
+            <strong>Observações:</strong><br />
+            <div>
+              <p>
+                Esta é uma opinião. Os critérios das notas estão explicados na
+                aba 'critérios' do site. https://parmegianologo.netlify.app/
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
