@@ -12,7 +12,7 @@ rogerscore:
   inovacoes: 0
   nome_acompanhamento1: arroz branco
   nome_acompanhamento2: batata chips
-nota: 
+nota: ''
 preco: "120"
 imagens:
 - "/uploads/2021-09-11_img_20210830_123806.jpg"
@@ -20,7 +20,9 @@ imagens:
 title: Sobaria Arakaki
 cidade: Campo Grande
 date: 2021-09-30T00:00:00-04:00
-justificativa: Muito boa
-recomendacao: ''
+justificativa: 'Apesar da apresentação não ser legal, o sabor é ótimo. O filé é macio,
+  o molho é gostoso e é possível sentir a crosta do empanado. '
+recomendacao: Servir o filé em um prato maior. Informar melhor tamanhos das porções.
+parmegianologoscore: 3/3
 
 ---
