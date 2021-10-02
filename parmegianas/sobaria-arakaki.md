@@ -9,7 +9,7 @@ rogerscore:
   montagem: 20
   tempo: 100
   custobeneficio: 100
-  inovacoes: 0
+  inovacoes: 
   nome_acompanhamento1: arroz branco
   nome_acompanhamento2: Batata Chips
   carne_text: Carne macia, altura e ponto correto
@@ -24,6 +24,7 @@ rogerscore:
   custobeneficio_text: Pedimos a 'meia-porção' e foi suficiente para 4 pessoas. Considerando
     o preço do 'meio-filé' (R$ 80) + batata (R$ 30) fica R$ 30 por pessoa
   inovacoes_text: Prato sem inovações
+  molho_text: Molho é bom, sem destaque, sem reclamações
 nota: ''
 preco: "120"
 imagens:
@@ -31,7 +32,7 @@ imagens:
 - "/uploads/2021-09-13_img_20210903_153411.jpg"
 title: Sobaria Arakaki
 cidade: Campo Grande
-date: 2021-09-30T00:00:00-04:00
+date: 2021-09-30T00:00:00.000-04:00
 justificativa: 'Apesar da apresentação não ser legal, o sabor é ótimo. O filé é macio,
   o molho é gostoso e é possível sentir a crosta do empanado. '
 recomendacao: Servir o filé em um prato maior. Informar melhor tamanhos das porções.
