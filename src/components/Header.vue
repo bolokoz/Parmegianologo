@@ -45,6 +45,9 @@
           <g-link to="/tabela" class="nav-link md:inline-flex md:text-left"
             >Tabela</g-link
           >
+          <g-link to="/nota" class="nav-link md:inline-flex md:text-left"
+            >Critérios nota</g-link
+          >
           <g-link to="/sobre" class="nav-link md:inline-flex md:text-left"
             >Sobre</g-link
           >
@@ -64,6 +67,9 @@
           >
           <g-link to="/tabela" class="nav-link md:inline-flex md:text-left"
             >Tabela</g-link
+          >
+          <g-link to="/nota" class="nav-link md:inline-flex md:text-left"
+            >Critérios nota</g-link
           >
           <g-link to="/sobre" class="nav-link md:inline-flex md:text-left"
             >Sobre</g-link
