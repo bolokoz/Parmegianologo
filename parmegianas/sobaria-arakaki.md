@@ -24,5 +24,6 @@ justificativa: 'Apesar da apresentação não ser legal, o sabor é ótimo. O fi
   o molho é gostoso e é possível sentir a crosta do empanado. '
 recomendacao: Servir o filé em um prato maior. Informar melhor tamanhos das porções.
 parmegianologoscore: 3/3
+porcao: 4
 
 ---
