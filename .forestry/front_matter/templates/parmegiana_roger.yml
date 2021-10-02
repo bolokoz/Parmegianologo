@@ -100,6 +100,11 @@ fields:
       min: 
       max: 
       step: 
+  - name: molho_text
+    type: text
+    config:
+      required: false
+    label: molho_text
   - name: nome_acompanhamento1
     type: text
     config:
@@ -212,11 +217,6 @@ fields:
     config:
       required: false
     label: inovacoes_text
-  - name: molho_text
-    type: text
-    config:
-      required: false
-    label: molho_text
   label: rogerscore
 - name: parmegianologoscore
   type: select
