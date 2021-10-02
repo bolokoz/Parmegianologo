@@ -154,3 +154,5 @@ fields:
       max: 100
       step: 
   label: rogerscore
+pages:
+- parmegianas/sobaria-arakaki.md
