@@ -47,6 +47,11 @@ fields:
       min: 
       max: 
       step: 
+  - name: carne_text
+    type: text
+    config:
+      required: false
+    label: carne_text
   - name: crosta
     type: number
     label: crosta
@@ -57,6 +62,11 @@ fields:
       min: 
       max: 
       step: 
+  - name: crosta_text
+    type: text
+    config:
+      required: false
+    label: crosta_text
   - name: queijo
     type: number
     label: queijo
@@ -68,6 +78,11 @@ fields:
       max: 100
       step: 10
       required: true
+  - name: queijo_text
+    type: text
+    config:
+      required: false
+    label: queijo_text
   - name: molho
     type: number
     label: molho
@@ -83,6 +98,11 @@ fields:
     config:
       required: false
     label: nome_acompanhamento1
+  - name: acompanhamento1_text
+    type: text
+    config:
+      required: false
+    label: acompanhamento1_text
   - name: acompanhamento1
     type: number
     label: acompanhamento1
@@ -99,6 +119,11 @@ fields:
     config:
       required: false
     label: nome_acompanhamento2
+  - name: acompanhamento2_text
+    type: text
+    config:
+      required: false
+    label: acompanhamento2_text
   - name: acompanhamento2
     type: number
     label: acompanhamento2
@@ -129,6 +154,11 @@ fields:
       min: 
       max: 
       step: 
+  - name: montagem_text
+    type: text
+    config:
+      required: false
+    label: montagem_text
   - name: tempo
     type: number
     label: tempo
@@ -139,6 +169,11 @@ fields:
       min: 
       max: 
       step: 
+  - name: tempo_text
+    type: text
+    config:
+      required: false
+    label: tempo_text
   - name: custobeneficio
     type: number
     label: custobeneficio
@@ -149,6 +184,11 @@ fields:
       min: 
       max: 
       step: 
+  - name: custobeneficio_text
+    type: text
+    config:
+      required: false
+    label: custobeneficio_text
   - name: inovacoes
     type: number
     label: inovacoes
@@ -160,11 +200,11 @@ fields:
       min: -100
       max: 100
       step: 
-  - name: carne_text
+  - name: inovacoes_text
     type: text
     config:
       required: false
-    label: carne_text
+    label: inovacoes_text
   label: rogerscore
 - name: parmegianologoscore
   type: select
