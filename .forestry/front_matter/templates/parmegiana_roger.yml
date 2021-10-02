@@ -17,6 +17,16 @@ fields:
 - type: text
   name: preco
   label: preco
+- name: porcao
+  type: number
+  label: porcao
+  description: Quantas pessoas serve 1 porcao
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
 - type: textarea
   name: justificativa
   label: justificativa
