@@ -2,24 +2,21 @@
 label: parmegiana_roger
 hide_body: true
 fields:
-- type: datetime
-  name: nota
-  label: nota
-- type: text
-  name: preco
-  label: preco
-- type: image_gallery
-  name: imagens
-  label: imagens
 - type: text
   name: title
   label: title
-- type: text
-  name: cidade
-  label: cidade
+- type: image_gallery
+  name: imagens
+  label: imagens
 - type: datetime
   name: date
   label: date
+- type: text
+  name: cidade
+  label: cidade
+- type: text
+  name: preco
+  label: preco
 - type: textarea
   name: justificativa
   label: justificativa
@@ -154,5 +151,23 @@ fields:
       max: 100
       step: 
   label: rogerscore
+- name: parmegianologoscore
+  type: select
+  default: ''
+  config:
+    required: false
+    options:
+    - 0/3
+    - 1/3
+    - 2/3
+    - 3/3
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: parmegianologoscore
+  description: 0/3 - ruim<br>1/3 - abaixo da média (não voltaria para comer)<br>2/3
+    - acima da média (voltaria para comer)<br>3/3 - muito bom, recomendadíssimo
 pages:
 - parmegianas/sobaria-arakaki.md
