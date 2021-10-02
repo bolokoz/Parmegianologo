@@ -8,6 +8,14 @@ fields:
   - type: image_gallery
     name: imagens
     label: imagens
+  - name: introducao
+    type: text
+    config:
+      required: false
+    label: introducao
+    description:
+      Falar sobre o restaurante, almoço ou janta, promoção ou a la carte,
+      nome do prato
   - type: datetime
     name: date
     label: date
@@ -17,6 +25,16 @@ fields:
   - type: text
     name: preco
     label: preco
+  - name: porcao
+    type: number
+    label: porcao
+    description: Quantas pessoas serve 1 porcao
+    default: 0
+    required: true
+    config:
+      min:
+      max:
+      step:
   - type: textarea
     name: justificativa
     label: justificativa
@@ -34,10 +52,14 @@ fields:
         default: 0
         required: true
         config:
-          min: 0
-          max: 100
-          step: 10
-          required: true
+          min:
+          max:
+          step:
+      - name: carne_text
+        type: text
+        config:
+          required: false
+        label: carne_text
       - name: crosta
         type: number
         label: crosta
@@ -45,10 +67,14 @@ fields:
         default: 0
         required: true
         config:
-          min: 0
-          max: 100
-          step: 10
-          required: true
+          min:
+          max:
+          step:
+      - name: crosta_text
+        type: text
+        config:
+          required: false
+        label: crosta_text
       - name: queijo
         type: number
         label: queijo
@@ -60,6 +86,11 @@ fields:
           max: 100
           step: 10
           required: true
+      - name: queijo_text
+        type: text
+        config:
+          required: false
+        label: queijo_text
       - name: molho
         type: number
         label: molho
@@ -67,15 +98,19 @@ fields:
         default: 0
         required: true
         config:
-          min: 0
-          max: 100
-          step: 10
-          required: true
+          min:
+          max:
+          step:
       - name: nome_acompanhamento1
         type: text
         config:
           required: false
         label: nome_acompanhamento1
+      - name: acompanhamento1_text
+        type: text
+        config:
+          required: false
+        label: acompanhamento1_text
       - name: acompanhamento1
         type: number
         label: acompanhamento1
@@ -85,46 +120,40 @@ fields:
         default: 0
         required: true
         config:
-          min: 0
-          max: 100
-          step: 10
-          required: true
+          min:
+          max:
+          step:
       - name: nome_acompanhamento2
         type: text
         config:
           required: false
         label: nome_acompanhamento2
+      - name: acompanhamento2_text
+        type: text
+        config:
+          required: false
+        label: acompanhamento2_text
       - name: acompanhamento2
         type: number
         label: acompanhamento2
         description:
           5.2 - MACARRÃO - SABOR, PONTO DE COZIMENTO, COMPATIBILIDADE DO TIPO
-          DE MACARRÃO COM RESTANTE DO PRATO5.
-          5.3 - PÃO - SABOR, TIPO DE FERMENTAÇÃO, TIPO
+          DE MACARRÃO COM RESTANTE DO PRATO5.3 - PÃO - SABOR, TIPO DE FERMENTAÇÃO, TIPO
           DE PREPARO PRÉ EMPRATAMENTO (GRELHADO SÓ? COM AZEITE? COM MANTEIGA? COM PIMENTA
-          PRETA? COMO TORRADA? COMO CROUTONS?ETC.)
-          5.4 - SALADA - SABOR, COMPATIBILIDADE
-          COM RESTANTE DO PRATO, QUALIDADE DOS VEGETAIS, QUALIDADE DO MOLHO5.
-          5 - BATATA
-          FRITA5.
-          5.1 - SE BATATA PALITO - SABOR, CROCÂNCIA, MACIEZ AO CENTRO, EXCESSO
-          DE ÓLEO5.
-          5.2 - SE BATATA CRINCLE - SABOR, CROCÂNCIA, EXCESSO DE ÓLEO5.
-          5.3 -
-          SE BATATA RÚSTICA - SABOR, MACIEZ AO CENTRO, EXCESSO DE ÓLEO5.
-          5.4 - SE BATATA
-          SMILE - SABOR, CROCÂNCIA, MACIEZ AO CENTRO, EXCESSO DE ÓLEO5.
-          6 - PURÊ - SABOR,
-          TEXTURA, VEGETAL UTILIZADO PARA REALIZAÇÃO DO PURÊ5.
-          7 - OUTROS - CONFORME O
+          PRETA? COMO TORRADA? COMO CROUTONS?ETC.)5.4 - SALADA - SABOR, COMPATIBILIDADE
+          COM RESTANTE DO PRATO, QUALIDADE DOS VEGETAIS, QUALIDADE DO MOLHO5.5 - BATATA
+          FRITA5.5.1 - SE BATATA PALITO - SABOR, CROCÂNCIA, MACIEZ AO CENTRO, EXCESSO
+          DE ÓLEO5.5.2 - SE BATATA CRINCLE - SABOR, CROCÂNCIA, EXCESSO DE ÓLEO5.5.3 -
+          SE BATATA RÚSTICA - SABOR, MACIEZ AO CENTRO, EXCESSO DE ÓLEO5.5.4 - SE BATATA
+          SMILE - SABOR, CROCÂNCIA, MACIEZ AO CENTRO, EXCESSO DE ÓLEO5.6 - PURÊ - SABOR,
+          TEXTURA, VEGETAL UTILIZADO PARA REALIZAÇÃO DO PURÊ5.7 - OUTROS - CONFORME O
           PREPARO ESPERADO PARA CADA ALIMENTO
         default: 0
         required: true
         config:
-          min: 0
-          max: 100
-          step: 10
-          required: true
+          min:
+          max:
+          step:
       - name: montagem
         type: number
         label: montagem
@@ -132,10 +161,14 @@ fields:
         default: 0
         required: true
         config:
-          min: 0
-          max: 100
-          step: 10
-          required: true
+          min:
+          max:
+          step:
+      - name: montagem_text
+        type: text
+        config:
+          required: false
+        label: montagem_text
       - name: tempo
         type: number
         label: tempo
@@ -143,10 +176,14 @@ fields:
         default: 0
         required: true
         config:
-          min: 0
-          max: 100
-          step: 10
-          required: true
+          min:
+          max:
+          step:
+      - name: tempo_text
+        type: text
+        config:
+          required: false
+        label: tempo_text
       - name: custobeneficio
         type: number
         label: custobeneficio
@@ -154,10 +191,14 @@ fields:
         default: 0
         required: true
         config:
-          min: 0
-          max: 100
-          step: 10
-          required: true
+          min:
+          max:
+          step:
+      - name: custobeneficio_text
+        type: text
+        config:
+          required: false
+        label: custobeneficio_text
       - name: inovacoes
         type: number
         label: inovacoes
@@ -169,7 +210,12 @@ fields:
         config:
           min: -100
           max: 100
-          step: 10
+          step:
+      - name: inovacoes_text
+        type: text
+        config:
+          required: false
+        label: inovacoes_text
     label: rogerscore
   - name: parmegianologoscore
     type: select

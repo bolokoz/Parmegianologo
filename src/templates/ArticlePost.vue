@@ -37,29 +37,119 @@
             <span class="font-semibold mr-5" v-text="$page.post.preco" />
           </div>
           <div class="flex-block">
+            <span class="font-semibold">Serve: </span>
+            <span class="font-semibold mr-5" v-text="$page.post.porcao" />
+          </div>
+          <div class="flex-block">
             <span class="font-semibold">Data:</span>
             <span class="font-light ml-2 mr-5" v-text="$page.post.date" />
           </div>
-          <div class="flex-block">
-            <span class="font-semibold">Nota:</span>
-            <span class="font-light ml-2 mr-5">{{ $page.post.nota }} </span>
-          </div>
-          <link
-            rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
-          />
+        </div>
+
+        <div class="pt-5">
+          <strong>Introdução:</strong><br />
           <div>
-            <ul class="flex justify-center">
-              <li v-for="(n, index) in 4" :key="index">
-                <i
-                  :class="[index < +$page.post.nota[0] ? 'fa' : 'far']"
-                  class="fa-star fa-sm text-yellow-500 mr-1"
-                ></i>
-              </li>
-            </ul>
+            <p>
+              <!-- {{ $page.post.introducao }} -->
+            </p>
           </div>
         </div>
 
+        <div class="pt-5">
+          <strong>Roger Score:</strong><br />
+          <div class="pt-5">
+            <span class="font-semibold"
+              >Carne: {{ $page.post.rogerscore.carne }} / 100</span
+            >
+            <div>
+              <p>
+                {{ $page.post.rogerscore.carne_text }}
+              </p>
+            </div>
+            <span class="font-semibold"
+              >Carne: {{ $page.post.rogerscore.crosta }} / 100</span
+            >
+            <div>
+              <p>
+                {{ $page.post.rogerscore.crosta_text }}
+              </p>
+            </div>
+            <span class="font-semibold"
+              >Carne: {{ $page.post.rogerscore.queijo }} / 100</span
+            >
+            <div>
+              <p>
+                {{ $page.post.rogerscore.queijo_text }}
+              </p>
+            </div>
+            <span class="font-semibold"
+              >Carne: {{ $page.post.rogerscore.molho }} / 100</span
+            >
+            <div>
+              <p>
+                {{ $page.post.rogerscore.molho_text }}
+              </p>
+            </div>
+          </div>
+          <div>
+            <p></p>
+            <p>Crosta: {{ $page.post.rogerscore.crosta }} / 100</p>
+            <p>Queijo: {{ $page.post.rogerscore.queijo }} / 100</p>
+            <p>Molho {{ $page.post.rogerscore.molho }} / 100</p>
+            <p>
+              Acompanhamento 1:
+              {{ $page.post.rogerscore.nome_acompanhamento1 }}:
+              {{ $page.post.rogerscore.acompanhamento1 }} / 100
+            </p>
+            <p>
+              Acompanhamento 2:
+              {{ $page.post.rogerscore.nome_acompanhamento2 }}:
+              {{ $page.post.rogerscore.acompanhamento2 }} / 100
+            </p>
+            <p>Montagem: {{ $page.post.rogerscore.montagem }} / 100</p>
+            <p>Tempo de preparação: {{ $page.post.rogerscore.tempo }} / 100</p>
+            <p>Inovações: {{ $page.post.rogerscore.inovacoes }} / 100</p>
+          </div>
+          <div class="pt-5">
+            <strong>Recomendações ao Chef:</strong><br />
+            <div>
+              <p>
+                {{ $page.post.recomendacao }}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-5">
+          <strong>Parmegianólogo score: </strong><br />
+          <div>
+            <div class="flex-block">
+              <link
+                rel="stylesheet"
+                href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+              />
+              <div>
+                <ul class="flex justify-center">
+                  <li v-for="(n, index) in 3" :key="index">
+                    <i
+                      :class="[
+                        index < +$page.post.parmegianologoscore[0]
+                          ? 'fa'
+                          : 'far',
+                      ]"
+                      class="fa-star fa-sm text-yellow-500 mr-1"
+                    >
+                    </i>
+                  </li>
+                  {{
+                    $page.post.parmegianologoscore
+                  }}
+                  - Recomendado
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="pt-5">
           <strong>Justificativa da nota:</strong><br />
           <div>
@@ -90,11 +180,33 @@ query ArticlePost ($path: String!) {
     path
     title
     imagens
-    nota
+    parmegianologoscore
     cidade
     date(format: "DD/MM/YY")
     preco
     recomendacao
+    rogerscore {
+      carne
+      molho
+      queijo
+      crosta
+      acompanhamento1
+      acompanhamento2
+      nome_acompanhamento1
+      nome_acompanhamento2
+      tempo
+      custobeneficio
+      inovacoes
+      carne_text
+      molho_text
+      queijo_text
+      crosta_text
+      acompanhamento1_text
+      acompanhamento2_text
+      tempo_text
+      custobeneficio_text
+      inovacoes_text
+    }
     justificativa
   }
 }
