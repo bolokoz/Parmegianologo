@@ -1,0 +1,28 @@
+---
+label: parmegiana_roger
+hide_body: true
+fields:
+- type: datetime
+  name: nota
+  label: nota
+- type: text
+  name: preco
+  label: preco
+- type: image_gallery
+  name: imagens
+  label: imagens
+- type: text
+  name: title
+  label: title
+- type: text
+  name: cidade
+  label: cidade
+- type: datetime
+  name: date
+  label: date
+- type: textarea
+  name: justificativa
+  label: justificativa
+- type: text
+  name: recomendacao
+  label: recomendacao
