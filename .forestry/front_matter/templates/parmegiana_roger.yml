@@ -2,239 +2,239 @@
 label: parmegiana_roger
 hide_body: true
 fields:
-  - type: text
-    name: title
-    label: title
-  - type: image_gallery
-    name: imagens
-    label: imagens
-  - name: introducao
-    type: text
-    config:
-      required: false
-    label: introducao
-    description:
-      Falar sobre o restaurante, almoço ou janta, promoção ou a la carte,
-      nome do prato
-  - type: datetime
-    name: date
-    label: date
-  - type: text
-    name: cidade
-    label: cidade
-  - type: text
-    name: preco
-    label: preco
-  - name: porcao
+- type: text
+  name: title
+  label: title
+- type: image_gallery
+  name: imagens
+  label: imagens
+- name: introducao
+  type: text
+  config:
+    required: false
+  label: introducao
+  description: Falar sobre o restaurante, almoço ou janta, promoção ou a la carte,
+    nome do prato
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: cidade
+  label: cidade
+- type: text
+  name: preco
+  label: preco
+- name: porcao
+  type: number
+  label: porcao
+  description: Quantas pessoas serve 1 porcao
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- type: textarea
+  name: justificativa
+  label: justificativa
+- type: text
+  name: recomendacao
+  label: recomendacao
+- name: rogerscore
+  type: field_group
+  config: {}
+  fields:
+  - name: carne
     type: number
-    label: porcao
-    description: Quantas pessoas serve 1 porcao
+    label: carne
+    description: ponto, sabor, maciez, altura
     default: 0
     required: true
     config:
-      min:
-      max:
-      step:
-  - type: textarea
-    name: justificativa
-    label: justificativa
-  - type: text
-    name: recomendacao
-    label: recomendacao
-  - name: rogerscore
-    type: field_group
-    config: {}
-    fields:
-      - name: carne
-        type: number
-        label: carne
-        description: ponto, sabor, maciez, altura
-        default: 0
-        required: true
-        config:
-          min:
-          max:
-          step:
-      - name: carne_text
-        type: text
-        config:
-          required: false
-        label: carne_text
-      - name: crosta
-        type: number
-        label: crosta
-        description: sabor, crocancia, cor, excesso de óleo, integridade
-        default: 0
-        required: true
-        config:
-          min:
-          max:
-          step:
-      - name: crosta_text
-        type: text
-        config:
-          required: false
-        label: crosta_text
-      - name: queijo
-        type: number
-        label: queijo
-        description: TIPO DE QUEIJO ESCOLHIDO/SABOR, DERRETIMENTO, GRATINAÇÃO
-        default: 0
-        required: true
-        config:
-          min: 0
-          max: 100
-          step: 10
-          required: true
-      - name: queijo_text
-        type: text
-        config:
-          required: false
-        label: queijo_text
-      - name: molho
-        type: number
-        label: molho
-        description: SABOR, LIQUIDEZ, TEXTURA, ACIDEZ
-        default: 0
-        required: true
-        config:
-          min:
-          max:
-          step:
-      - name: nome_acompanhamento1
-        type: text
-        config:
-          required: false
-        label: nome_acompanhamento1
-      - name: acompanhamento1_text
-        type: text
-        config:
-          required: false
-        label: acompanhamento1_text
-      - name: acompanhamento1
-        type: number
-        label: acompanhamento1
-        description:
-          5.1 - ARROZ5.1.1 - SE RISOTO - SABOR, PONTO DE COZIMENTO, COMPATIBILIDADE
-          COM O RESTANTE DO PRATO5.1.2 - SE BRANCO - SABOR, PONTO DE COZIMENTO
-        default: 0
-        required: true
-        config:
-          min:
-          max:
-          step:
-      - name: nome_acompanhamento2
-        type: text
-        config:
-          required: false
-        label: nome_acompanhamento2
-      - name: acompanhamento2_text
-        type: text
-        config:
-          required: false
-        label: acompanhamento2_text
-      - name: acompanhamento2
-        type: number
-        label: acompanhamento2
-        description:
-          5.2 - MACARRÃO - SABOR, PONTO DE COZIMENTO, COMPATIBILIDADE DO TIPO
-          DE MACARRÃO COM RESTANTE DO PRATO5.3 - PÃO - SABOR, TIPO DE FERMENTAÇÃO, TIPO
-          DE PREPARO PRÉ EMPRATAMENTO (GRELHADO SÓ? COM AZEITE? COM MANTEIGA? COM PIMENTA
-          PRETA? COMO TORRADA? COMO CROUTONS?ETC.)5.4 - SALADA - SABOR, COMPATIBILIDADE
-          COM RESTANTE DO PRATO, QUALIDADE DOS VEGETAIS, QUALIDADE DO MOLHO5.5 - BATATA
-          FRITA5.5.1 - SE BATATA PALITO - SABOR, CROCÂNCIA, MACIEZ AO CENTRO, EXCESSO
-          DE ÓLEO5.5.2 - SE BATATA CRINCLE - SABOR, CROCÂNCIA, EXCESSO DE ÓLEO5.5.3 -
-          SE BATATA RÚSTICA - SABOR, MACIEZ AO CENTRO, EXCESSO DE ÓLEO5.5.4 - SE BATATA
-          SMILE - SABOR, CROCÂNCIA, MACIEZ AO CENTRO, EXCESSO DE ÓLEO5.6 - PURÊ - SABOR,
-          TEXTURA, VEGETAL UTILIZADO PARA REALIZAÇÃO DO PURÊ5.7 - OUTROS - CONFORME O
-          PREPARO ESPERADO PARA CADA ALIMENTO
-        default: 0
-        required: true
-        config:
-          min:
-          max:
-          step:
-      - name: montagem
-        type: number
-        label: montagem
-        description: A DEPENDER DO SENSO DE ESTÉTICA DO AVALIADOR
-        default: 0
-        required: true
-        config:
-          min:
-          max:
-          step:
-      - name: montagem_text
-        type: text
-        config:
-          required: false
-        label: montagem_text
-      - name: tempo
-        type: number
-        label: tempo
-        description: TEMPO DE EXECUÇÃO - A DEPENDER DO QUE O AVALIADOR CONSIDERA ACEITÁVEL
-        default: 0
-        required: true
-        config:
-          min:
-          max:
-          step:
-      - name: tempo_text
-        type: text
-        config:
-          required: false
-        label: tempo_text
-      - name: custobeneficio
-        type: number
-        label: custobeneficio
-        description: CUSTO BENEFÍCIO
-        default: 0
-        required: true
-        config:
-          min:
-          max:
-          step:
-      - name: custobeneficio_text
-        type: text
-        config:
-          required: false
-        label: custobeneficio_text
-      - name: inovacoes
-        type: number
-        label: inovacoes
-        description:
-          INOVAÇÕES - ALGO NÃO USUAL EM UMA PARMEGIANA. ÚNICO ITEM COM POSSIBILIDADE
-          DE NOTA NEGATIVA.
-        default: 0
-        required: true
-        config:
-          min: -100
-          max: 100
-          step:
-      - name: inovacoes_text
-        type: text
-        config:
-          required: false
-        label: inovacoes_text
-    label: rogerscore
-  - name: parmegianologoscore
-    type: select
-    default: ""
+      min: 
+      max: 
+      step: 
+  - name: carne_text
+    type: text
     config:
       required: false
-      options:
-        - 0/3
-        - 1/3
-        - 2/3
-        - 3/3
-      source:
-        type: simple
-        section:
-        file:
-        path:
-    label: parmegianologoscore
-    description:
-      0/3 - ruim<br>1/3 - abaixo da média (não voltaria para comer)<br>2/3
-      - acima da média (voltaria para comer)<br>3/3 - muito bom, recomendadíssimo
+    label: carne_text
+  - name: crosta
+    type: number
+    label: crosta
+    description: sabor, crocancia, cor, excesso de óleo, integridade
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  - name: crosta_text
+    type: text
+    config:
+      required: false
+    label: crosta_text
+  - name: queijo
+    type: number
+    label: queijo
+    description: TIPO DE QUEIJO ESCOLHIDO/SABOR, DERRETIMENTO, GRATINAÇÃO
+    default: 0
+    required: true
+    config:
+      min: 0
+      max: 100
+      step: 10
+      required: true
+  - name: queijo_text
+    type: text
+    config:
+      required: false
+    label: queijo_text
+  - name: molho
+    type: number
+    label: molho
+    description: SABOR, LIQUIDEZ, TEXTURA, ACIDEZ
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  - name: nome_acompanhamento1
+    type: text
+    config:
+      required: false
+    label: nome_acompanhamento1
+  - name: acompanhamento1_text
+    type: text
+    config:
+      required: false
+    label: acompanhamento1_text
+  - name: acompanhamento1
+    type: number
+    label: acompanhamento1
+    description: 5.1 - ARROZ5.1.1 - SE RISOTO - SABOR, PONTO DE COZIMENTO, COMPATIBILIDADE
+      COM O RESTANTE DO PRATO5.1.2 - SE BRANCO - SABOR, PONTO DE COZIMENTO
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  - name: nome_acompanhamento2
+    type: text
+    config:
+      required: false
+    label: nome_acompanhamento2
+  - name: acompanhamento2_text
+    type: text
+    config:
+      required: false
+    label: acompanhamento2_text
+  - name: acompanhamento2
+    type: number
+    label: acompanhamento2
+    description: 5.2 - MACARRÃO - SABOR, PONTO DE COZIMENTO, COMPATIBILIDADE DO TIPO
+      DE MACARRÃO COM RESTANTE DO PRATO5.3 - PÃO - SABOR, TIPO DE FERMENTAÇÃO, TIPO
+      DE PREPARO PRÉ EMPRATAMENTO (GRELHADO SÓ? COM AZEITE? COM MANTEIGA? COM PIMENTA
+      PRETA? COMO TORRADA? COMO CROUTONS?ETC.)5.4 - SALADA - SABOR, COMPATIBILIDADE
+      COM RESTANTE DO PRATO, QUALIDADE DOS VEGETAIS, QUALIDADE DO MOLHO5.5 - BATATA
+      FRITA5.5.1 - SE BATATA PALITO - SABOR, CROCÂNCIA, MACIEZ AO CENTRO, EXCESSO
+      DE ÓLEO5.5.2 - SE BATATA CRINCLE - SABOR, CROCÂNCIA, EXCESSO DE ÓLEO5.5.3 -
+      SE BATATA RÚSTICA - SABOR, MACIEZ AO CENTRO, EXCESSO DE ÓLEO5.5.4 - SE BATATA
+      SMILE - SABOR, CROCÂNCIA, MACIEZ AO CENTRO, EXCESSO DE ÓLEO5.6 - PURÊ - SABOR,
+      TEXTURA, VEGETAL UTILIZADO PARA REALIZAÇÃO DO PURÊ5.7 - OUTROS - CONFORME O
+      PREPARO ESPERADO PARA CADA ALIMENTO
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  - name: montagem
+    type: number
+    label: montagem
+    description: A DEPENDER DO SENSO DE ESTÉTICA DO AVALIADOR
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  - name: montagem_text
+    type: text
+    config:
+      required: false
+    label: montagem_text
+  - name: tempo
+    type: number
+    label: tempo
+    description: TEMPO DE EXECUÇÃO - A DEPENDER DO QUE O AVALIADOR CONSIDERA ACEITÁVEL
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  - name: tempo_text
+    type: text
+    config:
+      required: false
+    label: tempo_text
+  - name: custobeneficio
+    type: number
+    label: custobeneficio
+    description: CUSTO BENEFÍCIO
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  - name: custobeneficio_text
+    type: text
+    config:
+      required: false
+    label: custobeneficio_text
+  - name: inovacoes
+    type: number
+    label: inovacoes
+    description: INOVAÇÕES - ALGO NÃO USUAL EM UMA PARMEGIANA. ÚNICO ITEM COM POSSIBILIDADE
+      DE NOTA NEGATIVA.
+    default: 0
+    required: true
+    config:
+      min: -100
+      max: 100
+      step: 
+  - name: inovacoes_text
+    type: text
+    config:
+      required: false
+    label: inovacoes_text
+  - name: molho_text
+    type: text
+    config:
+      required: false
+    label: molho_text
+  label: rogerscore
+- name: parmegianologoscore
+  type: select
+  default: ''
+  config:
+    required: false
+    options:
+    - 0/3
+    - 1/3
+    - 2/3
+    - 3/3
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: parmegianologoscore
+  description: 0/3 - ruim<br>1/3 - abaixo da média (não voltaria para comer)<br>2/3
+    - acima da média (voltaria para comer)<br>3/3 - muito bom, recomendadíssimo
 pages:
-  - parmegianas/sobaria-arakaki.md
+- parmegianas/sobaria-arakaki.md
