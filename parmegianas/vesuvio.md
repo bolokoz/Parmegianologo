@@ -37,6 +37,6 @@ rogerscore:
   nome_acompanhamento2: ''
   acompanhamento2_text: ''
   acompanhamento2: 
-parmegianologoscore: ''
+parmegianologoscore: 1/3
 
 ---
