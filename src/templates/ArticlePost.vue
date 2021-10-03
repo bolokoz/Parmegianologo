@@ -50,15 +50,14 @@
           <strong>Introdução:</strong><br />
           <div>
             <p>
-              <!-- {{ $page.post.introducao }} -->
+              {{ $page.post.introducao }}
             </p>
           </div>
         </div>
 
-        <div class="pt-5">
-          <strong>Roger Score:</strong><br />
+        <div>
           <div class="pt-5">
-            <span class="font-semibold"
+            <span class="font-bold"
               >Carne: {{ $page.post.rogerscore.carne }} / 100</span
             >
             <div>
@@ -66,90 +65,123 @@
                 {{ $page.post.rogerscore.carne_text }}
               </p>
             </div>
-            <span class="font-semibold"
-              >Carne: {{ $page.post.rogerscore.crosta }} / 100</span
+            <span class="font-bold"
+              >Crosta: {{ $page.post.rogerscore.crosta }} / 100</span
             >
             <div>
               <p>
                 {{ $page.post.rogerscore.crosta_text }}
               </p>
             </div>
-            <span class="font-semibold"
-              >Carne: {{ $page.post.rogerscore.queijo }} / 100</span
+            <span class="font-bold"
+              >Queijo: {{ $page.post.rogerscore.queijo }} / 100</span
             >
             <div>
               <p>
                 {{ $page.post.rogerscore.queijo_text }}
               </p>
             </div>
-            <span class="font-semibold"
-              >Carne: {{ $page.post.rogerscore.molho }} / 100</span
+            <span class="font-bold"
+              >Molho: {{ $page.post.rogerscore.molho }} / 100</span
             >
             <div>
               <p>
                 {{ $page.post.rogerscore.molho_text }}
               </p>
             </div>
-          </div>
-          <div>
-            <p></p>
-            <p>Crosta: {{ $page.post.rogerscore.crosta }} / 100</p>
-            <p>Queijo: {{ $page.post.rogerscore.queijo }} / 100</p>
-            <p>Molho {{ $page.post.rogerscore.molho }} / 100</p>
-            <p>
-              Acompanhamento 1:
+            <span class="font-bold">
               {{ $page.post.rogerscore.nome_acompanhamento1 }}:
-              {{ $page.post.rogerscore.acompanhamento1 }} / 100
-            </p>
-            <p>
-              Acompanhamento 2:
-              {{ $page.post.rogerscore.nome_acompanhamento2 }}:
-              {{ $page.post.rogerscore.acompanhamento2 }} / 100
-            </p>
-            <p>Montagem: {{ $page.post.rogerscore.montagem }} / 100</p>
-            <p>Tempo de preparação: {{ $page.post.rogerscore.tempo }} / 100</p>
-            <p>Inovações: {{ $page.post.rogerscore.inovacoes }} / 100</p>
-          </div>
-          <div class="pt-5">
-            <strong>Recomendações ao Chef:</strong><br />
+              {{ $page.post.rogerscore.acompanhamento1 }} / 100</span
+            >
             <div>
-              <p>
-                {{ $page.post.recomendacao }}
-              </p>
+              <p>{{ $page.post.rogerscore.acompanhamento1_text }} / 100</p>
+            </div>
+            <span class="font-bold">
+              {{ $page.post.rogerscore.nome_acompanhamento2 }}:
+              {{ $page.post.rogerscore.acompanhamento2 }} / 100</span
+            >
+            <div>
+              <p>{{ $page.post.rogerscore.acompanhamento2_text }} / 100</p>
             </div>
           </div>
-        </div>
-
-        <div class="pt-5">
-          <strong>Parmegianólogo score: </strong><br />
+          <span class="font-bold"
+            >Montagem: {{ $page.post.rogerscore.montagem }} / 100</span
+          >
           <div>
-            <div class="flex-block">
-              <link
-                rel="stylesheet"
-                href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
-              />
-              <div>
-                <ul class="flex justify-center">
-                  <li v-for="(n, index) in 3" :key="index">
-                    <i
-                      :class="[
-                        index < +$page.post.parmegianologoscore[0]
-                          ? 'fa'
-                          : 'far',
-                      ]"
-                      class="fa-star fa-sm text-yellow-500 mr-1"
-                    >
-                    </i>
-                  </li>
-                  {{
-                    $page.post.parmegianologoscore
-                  }}
-                  - Recomendado
-                </ul>
+            <p>
+              {{ $page.post.rogerscore.montagem_text }}
+            </p>
+          </div>
+          <span class="font-bold"
+            >Tempo de preparo: {{ $page.post.rogerscore.tempo }} / 100</span
+          >
+          <div>
+            <p>
+              {{ $page.post.rogerscore.tempo_text }}
+            </p>
+          </div>
+          <span class="font-bold"
+            >Custo benefício: {{ $page.post.rogerscore.custobeneficio }} /
+            100</span
+          >
+          <div>
+            <p>
+              {{ $page.post.rogerscore.custobeneficio_text }}
+            </p>
+          </div>
+          <span class="font-bold"
+            >Inovações: {{ $page.post.rogerscore.inovacoes }} / 100</span
+          >
+          <div>
+            <p>
+              {{ $page.post.rogerscore.inovacoes_text }}
+            </p>
+          </div>
+
+          <strong
+            >Roger Score: {{ $page.post.rogerscore.carne }} +
+            {{ $page.post.rogerscore.molho }} +
+            {{ $page.post.rogerscore.crosta }} +
+            {{ $page.post.rogerscore.queijo }} +
+            {{ $page.post.rogerscore.custobeneficio }} +
+            {{ $page.post.rogerscore.inovacoes }} +
+            {{ $page.post.rogerscore.tempo }} +
+            {{ $page.post.rogerscore.acompanhamento1 }} +
+            {{ $page.post.rogerscore.acompanhamento2 }} +
+            {{ $page.post.rogerscore.montagem }} = {{ rogerScore }}</strong
+          ><br />
+
+          <div class="pt-5">
+            <strong>Parmegianólogo score: </strong><br />
+            <div>
+              <div class="flex-block">
+                <link
+                  rel="stylesheet"
+                  href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+                />
+                <div>
+                  <ul class="flex justify-center">
+                    <li v-for="(n, index) in 3" :key="index">
+                      <i
+                        :class="[
+                          index < +$page.post.parmegianologoscore[0]
+                            ? 'fa'
+                            : 'far',
+                        ]"
+                        class="fa-star fa-sm text-yellow-500 mr-1"
+                      >
+                      </i>
+                    </li>
+                    {{
+                      $page.post.parmegianologoscore
+                    }}
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
         <div class="pt-5">
           <strong>Justificativa da nota:</strong><br />
           <div>
@@ -183,6 +215,7 @@ query ArticlePost ($path: String!) {
     parmegianologoscore
     cidade
     date(format: "DD/MM/YY")
+    porcao
     preco
     recomendacao
     rogerscore {
@@ -196,7 +229,9 @@ query ArticlePost ($path: String!) {
       nome_acompanhamento2
       tempo
       custobeneficio
-      inovacoes
+      custobeneficio_text
+      montagem
+      montagem_text
       carne_text
       molho_text
       queijo_text
@@ -204,7 +239,7 @@ query ArticlePost ($path: String!) {
       acompanhamento1_text
       acompanhamento2_text
       tempo_text
-      custobeneficio_text
+      inovacoes
       inovacoes_text
     }
     justificativa
@@ -234,6 +269,33 @@ export default {
         slidesToScroll: 1,
       },
     };
+  },
+  computed: {
+    rogerScore() {
+      let score = 0;
+      let carne = +this.$page.post.rogerscore.carne;
+      let molho = +this.$page.post.rogerscore.molho;
+      let crosta = +this.$page.post.rogerscore.crosta;
+      let queijo = +this.$page.post.rogerscore.queijo;
+      let acompanhamento1 = +this.$page.post.rogerscore.acompanhamento1;
+      let acompanhamento2 = +this.$page.post.rogerscore.acompanhamento2;
+      let custobeneficio = +this.$page.post.rogerscore.custobeneficio;
+      let inovacoes = +this.$page.post.rogerscore.inovacoes;
+      let tempo = +this.$page.post.rogerscore.tempo;
+      let montagem = +this.$page.post.rogerscore.montagem;
+
+      score =
+        this.$page.post.rogerscore.carne +
+        this.$page.post.rogerscore.molho +
+        this.$page.post.rogerscore.crosta +
+        this.$page.post.rogerscore.queijo +
+        this.$page.post.rogerscore.custobeneficio +
+        this.$page.post.rogerscore.tempo +
+        this.$page.post.rogerscore.acompanhamento1 +
+        this.$page.post.rogerscore.acompanhamento2 +
+        this.$page.post.rogerscore.montagem;
+      return score;
+    },
   },
 };
 </script>
