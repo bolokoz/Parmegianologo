@@ -9,7 +9,7 @@ rogerscore:
   montagem: 20
   tempo: 100
   custobeneficio: 100
-  inovacoes: 0
+  inovacoes: 
   nome_acompanhamento1: Arroz Branco
   nome_acompanhamento2: Batata Chips
   carne_text: Carne macia, altura e ponto correto
@@ -28,8 +28,9 @@ rogerscore:
 nota: ''
 preco: "120"
 imagens:
-- "/uploads/2021-09-11_img_20210830_123806.jpg"
-- "/uploads/2021-09-13_img_20210903_153411.jpg"
+- "/uploads/2021-10-03_img_20210930_195932.jpg"
+- "/uploads/2021-10-03_img_20210930_195823.jpg"
+- "/uploads/2021-10-03_img_20210930_195813.jpg"
 title: Sobaria Arakaki
 cidade: Campo Grande
 date: 2021-09-30T00:00:00.000-04:00
