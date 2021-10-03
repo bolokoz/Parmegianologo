@@ -237,6 +237,7 @@ fields:
   description: 0/3 - ruim<br>1/3 - abaixo da média (não voltaria para comer)<br>2/3
     - acima da média (voltaria para comer)<br>3/3 - muito bom, recomendadíssimo
 pages:
+- parmegianas/maracutaia-executivo.md
 - parmegianas/sobaria-arakaki.md
 - parmegianas/sweet-confeitaria.md
 - parmegianas/vesuvio.md
