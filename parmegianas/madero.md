@@ -39,6 +39,6 @@ rogerscore:
   custobeneficio_text: Meio caro demais para o que entrega
   inovacoes: 0
   inovacoes_text: Sem inovações
-parmegianologoscore: ''
+parmegianologoscore: 1/3
 
 ---
