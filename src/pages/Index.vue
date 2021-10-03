@@ -26,6 +26,8 @@ query Parmegianas{
         date (format: "DD/MM/YY")
         justificativa
         preco
+        parmegianologoscore
+        porcao
         cidade
       }
     }

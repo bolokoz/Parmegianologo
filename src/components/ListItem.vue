@@ -45,9 +45,9 @@
       <h1 class="mt-4 text-gray-800 text-3xl font-bold cursor-pointer">
         {{ item.title }}
         <ul class="flex">
-          <li v-for="(n, index) in 4" :key="index">
+          <li v-for="(n, index) in 3" :key="index">
             <i
-              :class="[index < +item.nota[0] ? 'fa' : 'far']"
+              :class="[index < +item.parmegianologoscore[0] ? 'fa' : 'far']"
               class="fa-star fa-sm text-yellow-500 mr-1"
             ></i>
           </li>
