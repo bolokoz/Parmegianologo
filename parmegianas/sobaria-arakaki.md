@@ -9,7 +9,7 @@ rogerscore:
   montagem: 20
   tempo: 100
   custobeneficio: 100
-  inovacoes: 
+  inovacoes: 0
   nome_acompanhamento1: arroz branco
   nome_acompanhamento2: Batata Chips
   carne_text: Carne macia, altura e ponto correto
