@@ -10,7 +10,7 @@ rogerscore:
   tempo: 100
   custobeneficio: 100
   inovacoes: 0
-  nome_acompanhamento1: arroz branco
+  nome_acompanhamento1: Arroz Branco
   nome_acompanhamento2: Batata Chips
   carne_text: Carne macia, altura e ponto correto
   crosta_text: Crosta bem feita, bonita, crocante e íntegra
