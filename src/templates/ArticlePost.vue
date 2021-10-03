@@ -4,8 +4,9 @@
       <div class="bg-white shadow-md p-1 rounded">
         <div class="my-6">
           <VueSlickCarousel v-bind="settings">
-            <div v-for="(imagem, i) in $page.post.imagens" :key="i">
+            <div>
               <g-image
+                v-for="(imagem, i) in $page.post.imagens"
                 :key="i"
                 class="
                   h-96
