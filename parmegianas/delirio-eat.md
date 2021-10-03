@@ -27,16 +27,16 @@ rogerscore:
   nome_acompanhamento1: Arroz Branco
   acompanhamento1_text: Arroz legal
   acompanhamento1: 100
-  nome_acompanhamento2: Batata
-  acompanhamento2_text: ''
-  acompanhamento2: 
-  montagem: 
-  montagem_text: ''
-  tempo: 
-  tempo_text: ''
-  custobeneficio: 
-  custobeneficio_text: ''
-  inovacoes: 
-  inovacoes_text: ''
+  nome_acompanhamento2: Batata Frita
+  acompanhamento2_text: Batata boa
+  acompanhamento2: 80
+  montagem: 80
+  montagem_text: Prato bonito
+  tempo: 70
+  tempo_text: Tempo ok
+  custobeneficio: 60
+  custobeneficio_text: É ok
+  inovacoes: 0
+  inovacoes_text: Sem inovações
 
 ---
