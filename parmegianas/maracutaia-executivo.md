@@ -29,16 +29,19 @@ rogerscore:
   nome_acompanhamento2: Salada
   acompanhamento2_text: Não comi a salada, não enrtará no score
   acompanhamento2: 100
-  montagem: 100
+  montagem: 50
   montagem_text: Muito bonitos os pratos e apresentação. Só achei um pouco difícil
     cortar o filé no recipiente dele.
-  tempo: 80
+  tempo: 40
   tempo_text: Entrega rápida apesar do restaurante estar lotado
-  custobeneficio: 70
+  custobeneficio: 40
   custobeneficio_text: Ótimo preço
   inovacoes: 30
   inovacoes_text: Pontos extras pelo Pesto. Ele não trouxe muito sabor (devido ao
     molho estar muito forte) mas é curioso
+  acompanhamentos_nomes: Arroz e batata chips e salada
+  acompanhamentos_text: Arroz muito bom, batata ok, salada não comi
+  acompanhamentos: 70
 parmegianologoscore: 1/3
 
 ---
