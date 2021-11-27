@@ -7,8 +7,8 @@ rogerscore:
   acompanhamento1: 100
   acompanhamento2: 60
   montagem: 20
-  tempo: 100
-  custobeneficio: 100
+  tempo: 50
+  custobeneficio: 50
   inovacoes: 
   nome_acompanhamento1: Arroz Branco
   nome_acompanhamento2: Batata Chips
@@ -23,8 +23,12 @@ rogerscore:
     estava quente e parecia preparado na hora.
   custobeneficio_text: Pedimos a 'meia-porção' e foi suficiente para 4 pessoas. Considerando
     o preço do 'meio-filé' (R$ 80) + batata (R$ 30) fica R$ 30 por pessoa
-  inovacoes_text: Prato sem inovações
+  inovacoes_text: ''
   molho_text: Molho é bom, sem destaque, sem reclamações
+  acompanhamentos_nomes: Arroz branco
+  acompanhamentos_text: Arroz branco é ok. Tem que pedir porção de batata chips separadamente.
+    A porção é enorme
+  acompanhamentos: 60
 nota: ''
 preco: "120"
 imagens:
