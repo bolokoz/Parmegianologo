@@ -3,7 +3,8 @@
     <div class="sm:w-full md:w-3/4 m-auto">
       <div class="bg-white shadow-md p-1 rounded">
         <div class="my-6">
-          <VueSlickCarousel v-bind="settings">
+          <CarouselP :images="$page.post.imagens" />
+          <!-- <VueSlickCarousel v-bind="settings">
             <div>
               <g-image
                 v-for="(imagem, i) in $page.post.imagens"
@@ -11,8 +12,7 @@
                 class="
                   h-96
                   w-full
-                  lg:w-full
-                  lg:h-1/2
+                  lg:w-full lg:h-1/2
                   flex-none
                   object-cover object-center
                   rounded-t
@@ -24,12 +24,12 @@
                 :alt="imagem.src"
               />
             </div>
-          </VueSlickCarousel>
+          </VueSlickCarousel> -->
         </div>
         <div class="text-4xl font-bold">
-          <spam v-text="$page.post.title" class="Article-title"></spam>
+          <span v-text="$page.post.title" class="Article-title"></span>
           <span> - </span>
-          <spam v-text="$page.post.cidade" class="font-light"></spam>
+          <span v-text="$page.post.cidade" class="font-light"></span>
         </div>
 
         <div class="flex flex-wrap w-full">
@@ -44,6 +44,16 @@
           <div class="flex-block">
             <span class="font-semibold">Data:</span>
             <span class="font-light ml-2 mr-5" v-text="$page.post.date" />
+          </div>
+        </div>
+        <div class="flex flex-wrap w-full">
+          <div class="flex-block">
+            <span class="font-semibold">Nota sentimental: </span>
+            <span class="font-semibold mr-5" v-text="1 / 3" />
+          </div>
+          <div class="flex-block">
+            <span class="font-semibold">Nota técnica: </span>
+            <span class="font-semibold mr-5" v-text="123 / 323" />
           </div>
         </div>
 
@@ -75,128 +85,127 @@
               </p>
             </div>
             <span class="font-bold"
-              >Queijo: {{ $page.post.rogerscore.queijo }} / 100</span
-            >
-            <div>
-              <p>
-                {{ $page.post.rogerscore.queijo_text }}
-              </p>
-            </div>
-            <span class="font-bold"
-              >Molho: {{ $page.post.rogerscore.molho }} / 100</span
+              >Molho / queijo: {{ $page.post.rogerscore.molho }} / 100</span
             >
             <div>
               <p>
                 {{ $page.post.rogerscore.molho_text }}
               </p>
             </div>
-            <span class="font-bold">
-              {{ $page.post.rogerscore.nome_acompanhamento1 }}:
-              {{ $page.post.rogerscore.acompanhamento1 }} / 100</span
+
+            <span class="font-bold"
+              >Acompanhamentos: {{ $page.post.rogerscore.acompanhamentos }} /
+              100</span
             >
             <div>
-              <p>{{ $page.post.rogerscore.acompanhamento1_text }} / 100</p>
+              <p>
+                {{ $page.post.rogerscore.acompanhamentos_text }}
+              </p>
             </div>
-            <span class="font-bold">
-              {{ $page.post.rogerscore.nome_acompanhamento2 }}:
-              {{ $page.post.rogerscore.acompanhamento2 }} / 100</span
+            <span class="font-bold"
+              >Montagem: {{ $page.post.rogerscore.montagem }} / 50</span
             >
             <div>
-              <p>{{ $page.post.rogerscore.acompanhamento2_text }} / 100</p>
+              <p>
+                {{ $page.post.rogerscore.montagem_text }}
+              </p>
             </div>
-          </div>
-          <span class="font-bold"
-            >Montagem: {{ $page.post.rogerscore.montagem }} / 100</span
-          >
-          <div>
-            <p>
-              {{ $page.post.rogerscore.montagem_text }}
-            </p>
-          </div>
-          <span class="font-bold"
-            >Tempo de preparo: {{ $page.post.rogerscore.tempo }} / 100</span
-          >
-          <div>
-            <p>
-              {{ $page.post.rogerscore.tempo_text }}
-            </p>
-          </div>
-          <span class="font-bold"
-            >Custo benefício: {{ $page.post.rogerscore.custobeneficio }} /
-            100</span
-          >
-          <div>
-            <p>
-              {{ $page.post.rogerscore.custobeneficio_text }}
-            </p>
-          </div>
-          <span class="font-bold"
-            >Inovações: {{ $page.post.rogerscore.inovacoes }} / 100</span
-          >
-          <div>
-            <p>
-              {{ $page.post.rogerscore.inovacoes_text }}
-            </p>
-          </div>
-
-          <strong
-            >Roger Score: {{ $page.post.rogerscore.carne }} +
-            {{ $page.post.rogerscore.molho }} +
-            {{ $page.post.rogerscore.crosta }} +
-            {{ $page.post.rogerscore.queijo }} +
-            {{ $page.post.rogerscore.custobeneficio }} +
-            {{ $page.post.rogerscore.inovacoes }} +
-            {{ $page.post.rogerscore.tempo }} +
-            {{ $page.post.rogerscore.acompanhamento1 }} +
-            {{ $page.post.rogerscore.acompanhamento2 }} +
-            {{ $page.post.rogerscore.montagem }} = {{ rogerScore }}</strong
-          ><br />
-
-          <div class="pt-5">
-            <strong>Parmegianólogo score: </strong><br />
+            <span class="font-bold"
+              >Tempo de preparo: {{ $page.post.rogerscore.tempo }} / 50</span
+            >
             <div>
-              <div class="flex-block">
-                <link
-                  rel="stylesheet"
-                  href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
-                />
-                <div>
-                  <ul class="flex justify-center">
-                    <li v-for="(n, index) in 3" :key="index">
-                      <i
-                        :class="[
-                          index < +$page.post.parmegianologoscore[0]
-                            ? 'fa'
-                            : 'far',
-                        ]"
-                        class="fa-star fa-sm text-yellow-500 mr-1"
-                      >
-                      </i>
-                    </li>
-                    {{
-                      $page.post.parmegianologoscore
-                    }}
-                  </ul>
+              <p>
+                {{ $page.post.rogerscore.tempo_text }}
+              </p>
+            </div>
+            <span class="font-bold"
+              >Custo benefício: {{ $page.post.rogerscore.custobeneficio }} /
+              50</span
+            >
+            <div>
+              <p>
+                {{ $page.post.rogerscore.custobeneficio_text }}
+              </p>
+            </div>
+            <span class="font-bold"
+              >Inovações / extras: {{ $page.post.rogerscore.inovacoes }} /
+              50</span
+            >
+            <div>
+              <p>
+                {{ $page.post.rogerscore.inovacoes_text }}
+              </p>
+            </div>
+
+            <strong
+              >Roger Score: {{ $page.post.rogerscore.carne }} +
+              {{ $page.post.rogerscore.molho }} +
+              {{ $page.post.rogerscore.crosta }} +
+              {{ $page.post.rogerscore.queijo }} +
+              {{ $page.post.rogerscore.custobeneficio }} +
+              {{ $page.post.rogerscore.inovacoes }} +
+              {{ $page.post.rogerscore.tempo }} +
+              {{ $page.post.rogerscore.acompanhamentos }} +
+              {{ $page.post.rogerscore.montagem }} = {{ rogerScore }} /
+              600</strong
+            ><br />
+
+            <div class="pt-5">
+              <strong>Parmegianólogo score: </strong><br />
+              <div>
+                <div class="flex-block">
+                  <link
+                    rel="stylesheet"
+                    href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+                  />
+                  <div>
+                    <ul class="flex justify-center">
+                      <li v-for="(n, index) in 3" :key="index">
+                        <i
+                          :class="[
+                            index < +$page.post.parmegianologoscore[0]
+                              ? 'fa'
+                              : 'far',
+                          ]"
+                          class="fa-star fa-sm text-yellow-500 mr-1"
+                        >
+                        </i>
+                      </li>
+                      {{
+                        $page.post.parmegianologoscore
+                      }}
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="pt-5">
-          <strong>Justificativa da nota:</strong><br />
-          <div>
-            <p>
-              {{ $page.post.justificativa }}
-            </p>
-          </div>
           <div class="pt-5">
-            <strong>Recomendações ao Chef:</strong><br />
+            <strong>Justificativa da nota:</strong><br />
             <div>
               <p>
-                {{ $page.post.recomendacao }}
+                {{ $page.post.justificativa }}
               </p>
             </div>
+            <div class="pt-5">
+              <strong>Recomendações ao Chef:</strong><br />
+              <div>
+                <p>
+                  {{ $page.post.recomendacao }}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          --------
+          <div>
+            <span class="font-italics">
+              Para saber mais sobre a metodologia e tabela comparativa
+              <a href="https://parmegianologo.netlify.app">
+                acesse o site parmegianologo.netlify.app</a
+              >
+            </span>
           </div>
         </div>
       </div>
@@ -250,16 +259,23 @@ query ArticlePost ($path: String!) {
 
 <script>
 import ArticleContent from "@/components/ArticleContent";
+import CarouselP from "@/components/CarouselP";
+// import VueAgile from "vue-agile";
+
 import VueSlickCarousel from "vue-slick-carousel";
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
 // optional style for arrows & dots
 import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
+
 export default {
   components: {
     ArticleContent,
     VueSlickCarousel,
+
+    CarouselP,
   },
   data() {
+    CarouselP;
     return {
       settings: {
         dots: true,
@@ -302,4 +318,23 @@ export default {
 </script>
 
 <style>
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
 </style>
