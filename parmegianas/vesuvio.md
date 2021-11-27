@@ -6,7 +6,7 @@ imagens:
 - "/uploads/2021-09-11_img_20210830_130126.jpg"
 title: Vesúvio
 cidade: Ilhéus/BA
-date: 2021-08-29T00:00:00-04:00
+date: 2021-08-29T00:00:00.000-04:00
 justificativa: O bife vem dobrado ao meio, deixando alto e fica muita carne para pouco
   molho. Os acompanhamentos são ok.
 recomendacao: Desdobrar o bife para que tenha um equilíbrio de sabores melhor em cada
@@ -26,17 +26,20 @@ rogerscore:
   nome_acompanhamento1: Arroz branco
   acompanhamento1_text: Muito bom
   acompanhamento1: 90
-  montagem: 80
+  montagem: 40
   montagem_text: Bonito prato
-  tempo: 80
+  tempo: 40
   tempo_text: Super rápido preparo
-  custobeneficio: 90
+  custobeneficio: 40
   custobeneficio_text: Ótimo
-  inovacoes: 0
-  inovacoes_text: Sem inovações
+  inovacoes: 
+  inovacoes_text: ''
   nome_acompanhamento2: ''
   acompanhamento2_text: ''
   acompanhamento2: 
+  acompanhamentos_nomes: Arroz e batata frita
+  acompanhamentos_text: Acompanhamentos muito bons
+  acompanhamentos: 80
 parmegianologoscore: 1/3
 
 ---
