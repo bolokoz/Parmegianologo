@@ -40,7 +40,8 @@ rogerscore:
   custobeneficio_text: Pelo preço enche bem
   inovacoes: 
   inovacoes_text: Sem inovações
-  acompanhamentos_text: ''
-  acompanhamentos: 
+  acompanhamentos_text: Arroz bom, batata muito oleosa
+  acompanhamentos: 60
+  acompanhamentos_nomes: Arroz e batata frita
 
 ---
