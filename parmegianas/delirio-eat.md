@@ -6,7 +6,7 @@ imagens:
 - "/uploads/2021-09-21_img_20210921_130344.jpg"
 title: Delírio Eat
 cidade: Campo Grande /MS
-date: 2021-09-21T00:00:00-04:00
+date: 2021-09-21T00:00:00.000-04:00
 justificativa: 'Almoço executivo R$50 com entrada e sobremesa. O parmegiana era de
   frango e no geral foi OK. Achei o molho com um amargor acentuado. Acompanhamentos
   agradam. Prefiro quando da para sentir o empanado no paladar, neste prato não dava. '
@@ -30,13 +30,16 @@ rogerscore:
   nome_acompanhamento2: Batata Frita
   acompanhamento2_text: Batata boa
   acompanhamento2: 80
-  montagem: 80
+  montagem: 40
   montagem_text: Prato bonito
-  tempo: 70
+  tempo: 40
   tempo_text: Tempo ok
-  custobeneficio: 60
+  custobeneficio: 40
   custobeneficio_text: É ok
-  inovacoes: 0
-  inovacoes_text: Sem inovações
+  inovacoes: 
+  inovacoes_text: ''
+  acompanhamentos_nomes: ''
+  acompanhamentos_text: ''
+  acompanhamentos: 
 
 ---
