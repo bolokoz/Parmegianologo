@@ -34,11 +34,13 @@ rogerscore:
   acompanhamento2: 30
   montagem: 40
   montagem_text: Arroz e batata por baixo do filé
-  tempo: 100
+  tempo: 50
   tempo_text: Linha de produção frenética quando tem promoção
-  custobeneficio: 70
+  custobeneficio: 40
   custobeneficio_text: Pelo preço enche bem
-  inovacoes: 0
+  inovacoes: 
   inovacoes_text: Sem inovações
+  acompanhamentos_text: ''
+  acompanhamentos: 
 
 ---
