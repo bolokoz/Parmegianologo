@@ -30,15 +30,19 @@ rogerscore:
   nome_acompanhamento2: Pão
   acompanhamento2_text: Acompanha também pão diferente. Não conheço sobre fermentação
     ou tipos, mas era muito gostoso.
-  montagem: 80
+  montagem: 40
   montagem_text: É bonito visualmente
-  tempo: 70
+  tempo: 30
   tempo_text: O tempo foi ok
-  custobeneficio: 80
+  custobeneficio: 40
   custobeneficio_text: Custo benefício ok
-  inovacoes: -70
+  inovacoes: -30
   inovacoes_text: Fettuccini não combinou com o filé.
-  molho_text: ''
+  molho_text: Molho ok
   acompanhamento2: 
+  acompanhamentos_nomes: Arroz branco e fetuccini com mesmo molho
+  acompanhamentos_text: Macarrão com o mesmo molho não dá. Ficou tudo ensopado e mesmo
+    sabor
+  acompanhamentos: 20
 
 ---
