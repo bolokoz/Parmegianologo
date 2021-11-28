@@ -4,27 +4,6 @@
       <div class="bg-white shadow-md p-1 rounded">
         <div class="my-6">
           <CarouselP :images="$page.post.imagens" />
-          <!-- <VueSlickCarousel v-bind="settings">
-            <div>
-              <g-image
-                v-for="(imagem, i) in $page.post.imagens"
-                :key="i"
-                class="
-                  h-96
-                  w-full
-                  lg:w-full lg:h-1/2
-                  flex-none
-                  object-cover object-center
-                  rounded-t
-                  lg:rounded-t-none lg:rounded-l
-                  text-center
-                  overflow-hidden
-                "
-                :src="imagem.src"
-                :alt="imagem.src"
-              />
-            </div>
-          </VueSlickCarousel> -->
         </div>
         <div class="text-4xl font-bold">
           <span v-text="$page.post.title" class="Article-title"></span>
@@ -49,11 +28,16 @@
         <div class="flex flex-wrap w-full">
           <div class="flex-block">
             <span class="font-semibold">Nota sentimental: </span>
-            <span class="font-semibold mr-5" v-text="1 / 3" />
+            <span
+              class="font-semibold mr-5"
+              v-text="$page.post.parmegianologoscore"
+            />
+            <span class="font-semibold"> </span>
           </div>
           <div class="flex-block">
             <span class="font-semibold">Nota técnica: </span>
-            <span class="font-semibold mr-5" v-text="123 / 323" />
+            <span class="font-semibold" v-text="rogerScore" />
+            <span class="font-semibold"> / 600</span>
           </div>
         </div>
 
@@ -94,8 +78,9 @@
             </div>
 
             <span class="font-bold"
-              >Acompanhamentos: {{ $page.post.rogerscore.acompanhamentos }} /
-              100</span
+              >Acompanhamentos =>
+              {{ $page.post.rogerscore.acompanhamentos_nomes }}:
+              {{ $page.post.rogerscore.acompanhamentos }} / 100</span
             >
             <div>
               <p>
@@ -111,7 +96,8 @@
               </p>
             </div>
             <span class="font-bold"
-              >Tempo de preparo: {{ $page.post.rogerscore.tempo }} / 50</span
+              >Tempo de preparo e restaurante:
+              {{ $page.post.rogerscore.tempo }} / 50</span
             >
             <div>
               <p>
@@ -128,7 +114,7 @@
               </p>
             </div>
             <span class="font-bold"
-              >Inovações / extras: {{ $page.post.rogerscore.inovacoes }} /
+              >Inovações extras: {{ $page.post.rogerscore.inovacoes }} /
               50</span
             >
             <div>
@@ -141,12 +127,11 @@
               >Roger Score: {{ $page.post.rogerscore.carne }} +
               {{ $page.post.rogerscore.molho }} +
               {{ $page.post.rogerscore.crosta }} +
-              {{ $page.post.rogerscore.queijo }} +
               {{ $page.post.rogerscore.custobeneficio }} +
-              {{ $page.post.rogerscore.inovacoes }} +
               {{ $page.post.rogerscore.tempo }} +
               {{ $page.post.rogerscore.acompanhamentos }} +
-              {{ $page.post.rogerscore.montagem }} = {{ rogerScore }} /
+              {{ $page.post.rogerscore.montagem }} +
+              {{ $page.post.rogerscore.inovacoes }} = {{ rogerScore }} /
               600</strong
             ><br />
 
@@ -223,6 +208,7 @@ query ArticlePost ($path: String!) {
     title
     imagens
     parmegianologoscore
+    introducao
     cidade
     date(format: "DD/MM/YY")
     porcao
@@ -246,6 +232,9 @@ query ArticlePost ($path: String!) {
       molho_text
       queijo_text
       crosta_text
+      acompanhamentos
+      acompanhamentos_text
+      acompanhamentos_nomes
       acompanhamento1_text
       acompanhamento2_text
       tempo_text
@@ -260,46 +249,18 @@ query ArticlePost ($path: String!) {
 <script>
 import ArticleContent from "@/components/ArticleContent";
 import CarouselP from "@/components/CarouselP";
-// import VueAgile from "vue-agile";
-
-import VueSlickCarousel from "vue-slick-carousel";
-import "vue-slick-carousel/dist/vue-slick-carousel.css";
-// optional style for arrows & dots
-import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 
 export default {
   components: {
     ArticleContent,
-    VueSlickCarousel,
-
     CarouselP,
   },
   data() {
-    CarouselP;
-    return {
-      settings: {
-        dots: true,
-        dotsClass: "slick-dots custom-dot-class",
-        infinite: false,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    };
+    return {};
   },
   computed: {
     rogerScore() {
       let score = 0;
-      let carne = +this.$page.post.rogerscore.carne;
-      let molho = +this.$page.post.rogerscore.molho;
-      let crosta = +this.$page.post.rogerscore.crosta;
-      let queijo = +this.$page.post.rogerscore.queijo;
-      let acompanhamento1 = +this.$page.post.rogerscore.acompanhamento1;
-      let acompanhamento2 = +this.$page.post.rogerscore.acompanhamento2;
-      let custobeneficio = +this.$page.post.rogerscore.custobeneficio;
-      let inovacoes = +this.$page.post.rogerscore.inovacoes;
-      let tempo = +this.$page.post.rogerscore.tempo;
-      let montagem = +this.$page.post.rogerscore.montagem;
 
       score =
         this.$page.post.rogerscore.carne +
@@ -308,8 +269,7 @@ export default {
         this.$page.post.rogerscore.queijo +
         this.$page.post.rogerscore.custobeneficio +
         this.$page.post.rogerscore.tempo +
-        this.$page.post.rogerscore.acompanhamento1 +
-        this.$page.post.rogerscore.acompanhamento2 +
+        this.$page.post.rogerscore.acompanhamentos +
         this.$page.post.rogerscore.montagem;
       return score;
     },

@@ -3,6 +3,8 @@
     <div class="slide" v-for="(img, i) in images" :key="i">
       <img :src="img.src" />
     </div>
+    <template slot="prevButton"><i class="fas fa-chevron-left"></i></template>
+    <template slot="nextButton"><i class="fas fa-chevron-right"></i></template>
   </agile>
 </template>
 
