@@ -27,8 +27,8 @@ introducao: 'Almoço executivo no sábado R$ 59 com entrada, prato principal e s
 date: 2021-11-27T00:00:00-04:00
 cidade: Campo Grande
 preco: "59"
-justificativa: ''
-recomendacao: ''
+justificativa: No geral tudo muito gostoso. Acima da média. Batatinha no ponto.
+recomendacao: Aprimorar na crocância e o queijo
 parmegianologoscore: 2/3
 
 ---
