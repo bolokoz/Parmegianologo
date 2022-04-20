@@ -17,3 +17,4 @@
   - basta acessar o endereço meusite.com/admin
 - Site estático com páginas dinâmicas baseadas no api buscado com graphql (gridsome)
 - Design Tailwind + FontAwesome
+- FontAwesome nem é feature, coloquei pra encher linguiça
